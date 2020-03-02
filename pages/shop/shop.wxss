@@ -1,0 +1,18 @@
+/* pages/july_start/july_start.wxss */
+
+.list {
+  height: 600rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.vie{
+  height: 420rpx;
+  color:#aaa;
+  line-height: 90rpx;
+  margin: 20rpx ;
+}
+.button{
+  color:#2eb3ff;
+  border: 1px solid #2eb3ff;
+}

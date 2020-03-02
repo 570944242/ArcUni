@@ -1,0 +1,7 @@
+<view wx:for='{{res_list}}' wx:key='{{index}}' wo:for-item='item'>
+  <view> {{item.name}}322332</view>
+  <image src="{{item.img_url}}"></image>
+  <view>{{item.detail}}1111</view>
+  <view>{{item.poster}}222</view>
+  <view>{{item.createdAt}}333</view>
+</view>

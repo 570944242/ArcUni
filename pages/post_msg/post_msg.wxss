@@ -1,0 +1,95 @@
+/* pages/post_msg/post_msg.wxss */
+
+.tooop {
+  height: 600rpx;
+  width: 750rpx;
+}
+
+page {
+  width: 750rpx;
+  height: 1100rpx;
+}
+
+.down_item2 {
+  width: 750rpx;
+  height: 400rpx;
+  border-top: 1px solid #ccc;
+  line-height: 45rpx;
+  font-size: 30rpx;
+  color: #555;
+  background-color: #fff;
+}
+
+.right_item1 {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx 0 20rpx 30rpx;
+  background-color: #fff;
+}
+
+.right_item3 {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx 0 20rpx 30rpx;
+  background-color: #fff;
+  border: 1px dotted #fe6;
+}
+
+.bouu {
+  background-color: #e3e1e1;
+  height: 480rpx;
+  width: 750rpx;
+}
+
+.pppt {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  width: 750rpx;
+  margin: 20rpx 0 20rpx 0;
+}
+
+.nichen {
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 200rpx;
+  background-color: #fff;
+  margin: 20rpx 0 20rpx 0;
+}
+
+.right_1 {
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 600rpx;
+  background-color: #fff;
+  margin: 20rpx 0 20rpx 0;
+}
+
+.imggg {
+  width: 750rpx;
+  height: 190rpx;
+  border-bottom: 1px dotted #ccc;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  width: 750rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+.placeholder-class1 {
+  color: #aaa;
+  font-size: 40rpx;
+}
+
+.bottimww {
+  z-index: 100;
+  width: 750rpx;
+  height: 110rpx;
+  margin: 0;
+}

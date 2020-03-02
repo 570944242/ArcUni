@@ -1,0 +1,3 @@
+<button class='page'  open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+  <image class='img' src='{{url}}' mode='scaleToFill'></image>
+</button>

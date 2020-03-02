@@ -1,0 +1,111 @@
+<!--pages/wall/wall.wxml-->
+<view>
+  <view class="write">
+    <view class='iee {{currentTab==index||(all==true&&index==0) ? "active" : ""}}' wx:for="{{navbar}}" data-idx="{{index}}" wx:key="unique" bindtap="navbarTap">{{item}}</view>
+  </view>
+
+  <image src='http://bmob-cdn-20938.b0.upaiyun.com/2018/08/09/f813db3840387e74801e70fe4ca72f46.jpg' class='sec_img'></image>
+  <!-- <view class='two'>
+    <input class='inp'bindinput="bindReplaceInput"  placeholder="搜索内容"></input>
+    <view class='inp1' bindtap='yyy'>搜索一下</view>
+  </view> -->
+
+  <view class='tuo' wx:if='{{tuo}}'>
+    <view class='clu_it'>
+      <image src='./img/q1.jpg' class='img01' id='1' bindtap='red'></image>
+      <text class='clu_bott'>表白墙</text>
+    </view>
+    <view class='clu_it'>
+      <image src='./img/q2.jpg' class='img01' id='2' bindtap='red'></image>
+      <text class='clu_bott'>树洞</text>
+    </view>
+    <view class='clu_it'>
+      <image src='./img/q3.jpg' class='img01' id='3' bindtap='red'></image>
+      <text class='clu_bott'>寻物启事</text>
+    </view>
+    <view class='clu_it'>
+      <image src='./img/q4.jpg' class='img01' id='4' bindtap='red'></image>
+      <text class='clu_bott'>失物招领</text>
+    </view>
+  </view>
+
+
+  <view class='ttt' wx:for='{{res_msg}}' wx:key='index' wx:for-item='item'>
+    <view class='ooo'>昵称：
+      <text style='color:#ff7900;font-size:25rpx;'>{{item.name?item.name:'匿名'}}  <text style='background-color:#e152be; margin-left:30rpx;color:#fff;font-size:25rpx;' wx:if='{{item.eid==1}}'>表白墙</text>
+      <text style='background-color:#54d2f8;margin-left:30rpx;color:#fff;font-size:25rpx;' wx:if='{{item.eid==2}}'>树洞</text>
+      <text style='background-color:#36b25c;margin-left:30rpx;color:#fff;font-size:25rpx;' wx:if='{{item.eid==3}}'>寻物启事</text>
+      <text style='background-color:#fec106;margin-left:30rpx;color:#fff;font-size:25rpx;' wx:if='{{item.eid==4}}'>失物招领</text></text>
+
+    </view>
+    <view class='ooo' style='font-size:20rpx;'>{{item.createdAt}}</view>
+
+    <view class='goods-details'>
+
+      <text catchtap='showAllAction' class='goods-details-content {{isShowAllContent ?"content-all" :"content-breif"}}'>{{item.detail}}</text>
+    </view>
+
+
+
+    <view>
+      <image wx:for='{{item.img}}' src='{{item}}' catchtap='show_img' data-url='{{item}}' wx:for-item='item' class='imjj' wx:key='index'></image>
+    </view>
+
+    <view class='sss'>
+
+      <view id='{{item.objectId}}' class='bott_i' bindtap='zan'>查看&评论</view>
+      <view bindtap='showDialogBtn' class='bott_i'>举报</view>
+    </view>
+
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+    <view class="modal-dialog" wx:if="{{showModal}}">
+      <view class="modal-title">举报内容</view>
+      <view class="modal-content">
+        <view class="modal-input">
+          <input placeholder-class="input-holder" type="number" maxlength="100" bindinput="inputChange" value='{{v_jvbao}}' class="input" placeholder="请输入举报内容"></input>
+        </view>
+      </view>
+      <view class="modal-footer">
+        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+        <view class="btn-confirm" bindtap="onConfirm" id='{{item.objectId}}' data-status="confirm">举报</view>
+      </view>
+    </view>
+
+
+    <view wx:if='{{is_comment&&(item.objectId==v_id)}}'>
+      <view wx:for='{{res_comment}}' wx:key='{{index}}'>
+        <text class='text_com_1'>{{index+1}}楼</text>
+        <text class='text_com_2'>{{res_comment[index].post_name}}</text>
+        <text class='text_com_3' style='font-size:15rpx;'>{{res_comment[index].createdAt}}</text>
+        <view>
+          <text class='text_com_4'>{{res_comment[index].contect}}</text>
+        </view>
+      </view>
+      <form bindsubmit="frb" report-submit='true' id='{{item.objectId}}'>
+        <view class='two'>
+          <input class='put_tl' name='contect' id='{{item.objectId}}' value='{{com_value}}' placeholder="输入评论"></input>
+          <button class='inp3' formType="submit">发表</button>
+        </view>
+      </form>
+
+      <view wx:for='{{comment_res}}' wx:key='index' wx:for-item='item'>
+        <view>
+          {{item.post_name}}
+        </view>
+        <view>{{item.createdAt}}
+        </view>
+        <view>{{item.contect}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class='bottim'>
+  <image src='./img/ms.png' class='img0' id='1' bindtap='wxswi_index'></image>
+  <image src='./img/po.jpg' class='img0' id='2'  bindtap='post'></image>
+  <!-- <image src='./img/ab.png' class='img0'></image> -->
+  <button open-type="contact" id='3' bindcontact='contact'  class='lll'>
+    <image src='./img/ab.png' class='img8'></image>
+  </button>
+</view>

@@ -1,0 +1,22 @@
+<view class='back'>
+  <swiper indicator-color="#fff" indicator-active-color='#2eb3ff' circular='true' class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="300">
+    <swiper-item wx:for="{{img}}" wx:key='{{index}}' wo:for-item='item'>
+      <image src="{{img[index]}}" mode="scaleToFill" />
+    </swiper-item>
+  </swiper>
+  <view class='item_all'>
+    <image class='img1' src='img/qqq0.png' bindtap='go_qiang'></image>
+    <image class='img2' src='img/act.jpg' bindtap='hope'></image>
+    <image class='img3' src='img/gru.jpg' bindtap='hope'></image>
+  </view>
+  <view class='item_all'>
+    <image class='img2' src='img/sc.jpg' bindtap='hope'></image>
+    <image class='img3' src='img/home.jpg' bindtap='hope'></image>
+    <image class='img3' src='img/sc_map.jpg' bindtap='hope'></image>
+    <image class='img3' src='img/ser.jpg' bindtap='hope'></image>
+  </view>
+
+  <image class='imgbo' src='img/len.png' bindtap='hope'></image>
+
+  <image src="{{p_url}}" mode="scaleToFill" class='p_url'  bindtap='hope'/>
+</view>

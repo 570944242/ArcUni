@@ -1,0 +1,29 @@
+
+<view class='tooop'>
+  <form bindsubmit="formSubmit">
+    <textarea class='down_item2' name="detail" placeholder-class="placeholder-class1" placeholder="请输入详细内容" maxlength="{{noteMaxLen}}" maxlength="100"></textarea>
+    <view class='imggg'>
+      <image name="pic_Url" src="img/add.png" wx:if='{{!img_res}}' class='right_item1' mode='scaleToFill' bindtap='uploadPic'></image>
+      <image wx:if='{{img_res}}' wx:for='{{img_res}}' wx:key='index' src="{{item}}" wx:if='{{img_res}}' class='right_item3' mode='scaleToFill' bindtap='uploadPic'></image>
+
+    </view>
+    <view class='bouu'>
+      <view class='pppt'>
+        <view class='nichen'>
+          <text space="nbsp">昵       称：</text>
+        </view>
+        <input class='right_1' placeholder="不填默认匿名" placeholder-class='placeholder-class1' maxlength="15" name="name1"></input>
+      </view>
+      <view class='pppt'>
+        <view class='nichen'>联系方式：</view>
+        <input class='right_1' placeholder="可选填" placeholder-class='placeholder-class1' maxlength="15" name="connect"></input>
+      </view>
+
+    </view>
+
+    <button class='button' data-img='{{img_res}}' id='{{eid}}' formType="submit">
+      <image class='bottimww' src='img/eeee.jpg'></image>
+    </button>
+  </form>
+
+</view>

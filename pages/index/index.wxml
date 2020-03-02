@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<page>
+  <view class="container">
+
+    <!-- <button bindtap="bindViewTap">扫一扫</button> -->
+
+    <form bindsubmit="formSubmit">
+      <view>{{class}}</view>
+      <input  class='right_1' wx:if='{{eid!=4}}' placeholder="{{name1}}" placeholder-class='placeholder-class1' maxlength="15" name="name1" ></input>
+ 
+      <image name="pic_Url" src="{{pic_URL?pic_URL:'img/add.png'}}" class='right_item1' mode='scaleToFill' bindtap='uploadPic'></image>
+      <view>{{img_say}}</view>
+      <textarea class='down_item2' name="detail" placeholder-class="placeholder-class1" placeholder="{{detail}}"  maxlength="{{noteMaxLen}}" maxlength="100"></textarea>
+      <button class='button' id='{{eid}}' data-img='{{img}}' formType="submit">提交</button>
+    </form>
+  </view>
+</page>

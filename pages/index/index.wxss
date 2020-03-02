@@ -1,0 +1,37 @@
+page {
+  width: 750rpx;
+  height: 1100rpx;
+}
+
+.down_item2 {
+  width: 710rpx;
+  height: 180rpx;
+  margin-left: 20rpx;
+  border-bottom: 3rpx solid #ccc;
+  line-height: 45rpx;
+  font-size: 30rpx;
+  color: #555;
+  border-top: 3rpx solid #ccc;
+}
+.right_item1 {
+  width: 250rpx;
+  height: 250rpx;
+  margin-top: 40rpx;
+}
+.button {
+  width: 400rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 16px;
+  border: 0 none;
+  background: #2eb3ff;
+  color: #fff;
+  margin: 30rpx auto;
+  border-radius: 50px;
+}
+.placeholder-class1 {
+  font-size: 30rpx;
+ 
+  color: #aaa;
+}

@@ -1,0 +1,80 @@
+.img-plus-style {
+  height: 90rpx;
+  width: 90rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: 130rpx;
+  z-index: 100;
+}
+
+.mytoask {
+  display: flex;
+  flex-direction: row;
+}
+
+.mytoask1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.img_text_item {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #71d38c;
+}
+
+.img_text_item1 {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #71d38c;
+}
+
+.img_text_item::after {
+  border: none;
+}
+
+.img_item {
+  height: 140rpx;
+  width: 110rpx;
+  margin: 20rpx 30rpx 20rpx 30rpx;
+}
+
+.img_text {
+  font-size: 20rpx;
+  width: 90rpx;
+  text-align: center;
+}
+
+.img_text_item:active {
+  background-color: #71d38c;
+  color: #fff;
+}
+
+.img-style {
+  height: 150rpx;
+  width: 150rpx;
+  position: absolute;
+  bottom: 250rpx;
+  right: 100rpx;
+  opacity: 0;
+}
+
+.list {
+  width: 750rpx;
+  height: 170rpx;
+  background-color: #fff;
+ display: flex;
+  flex-direction: row;
+}
+.item_m{
+  margin-left:78rpx;
+ margin: 30rpx 0 0 78rpx;
+}
+.item_mmm{
+  width: 90rpx;
+  height: 90rpx;
+}

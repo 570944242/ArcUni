@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/wall/wall",
+    "pages/main/main",
+    "pages/post_msg/post_msg",
+    "pages/home/home",
+    "pages/shop/shop",
+    "pages/index/index",
+    "pages/child/child",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#251713",
+    "navigationBarTitleText": "in建大",
+    "navigationBarTextStyle": "#2eb3ff"
+  },
+  "sitemapLocation": "sitemap.json"
+}

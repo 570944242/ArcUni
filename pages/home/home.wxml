@@ -1,0 +1,27 @@
+<view class='list'>
+  <view class='item_m' wx:for="{{my_sent_item}}" wx:for-item="item" wx:key="{{id}}" wx:for-item="item" bindtap='go_list'>
+    <image src='{{item.src}}' class='item_mmm'></image>
+    <view class='img_text'>{{item.contant}}</view>
+  </view>
+</view>
+<view class='list'>
+  <view class='item_m' wx:for="{{my_sent_item2}}" wx:for-item="item" wx:key="{{id}}" wx:for-item="item" bindtap='go_list'>
+    <image src='{{item.src}}' class='item_mmm'></image>
+    <view class='img_text'>{{item.contant}}</view>
+  </view>
+</view>
+
+
+<view>
+
+  <image src="img/find.png" id='1' class="img-plus-style" animation="{{animCollect}}" bindtap="input"></image>
+
+  <image src="img/goods.png" id='2' class="img-plus-style" animation="{{animTranspond}}" bindtap="input"></image>
+  <image src="img/biao.png" id='3' class="img-plus-style" animation="{{animInput}}" bindtap="input"></image>
+
+  <image src="img/tree.png" id='4' class="img-plus-style" animation="{{animInput4}}" bindtap="input"></image>
+
+  <image src="img/hand_2.png" id='5' class="img-plus-style" animation="{{animInput5}}" bindtap="go_shop"></image>
+
+  <image src="/img/collect.png" id='6' class="img-plus-style" animation="{{animPlus}}" bindtap="plus"></image>
+</view>
